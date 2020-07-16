@@ -15,8 +15,6 @@ class App extends Component {
   state = initialState;
 
   onDragEnd = (result) => {
-    this.setState({ homeIndex: null });
-
     const { destination, source, draggableId, type } = result;
 
     // No destination
